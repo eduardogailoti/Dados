@@ -28,11 +28,7 @@ public class Person {
             }
         }
 
-        if (count == 0) {
-            return 0.0;
-        }
-
-        return sumHeight / count;
+        return count == 0 ? 0.0 : sumHeight / count;
     }
 
     public static int countMen(Person[] person) {
